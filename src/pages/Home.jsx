@@ -1,15 +1,16 @@
 
-import React from 'react'
+import React from 'react';
 
 const Home = () => {
     return (
-      <div className="container py-5" style={{ color: 'white' }}>
-        <h1 className="mb-4">Welcome to Product App</h1>
-        <p>
-          This is the home page of your awesome product store. Browse our products,
-          learn about us, and feel free to get in touch!
-        </p>
-      </div>
+        <div className="text-center p-4">
+            <h1 className="fw-bold fs-1">Welcom to Grabshop!</h1>
+            <img 
+                src="https://i.pinimg.com/474x/82/7c/eb/827ceb84ac7440a4cdc384e7d9e3412e.jpg" 
+                alt="Home"
+            />
+        </div>
     );
-  };
-export default Home
+};
+
+export default Home;

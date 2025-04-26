@@ -2,7 +2,7 @@
 // src/pages/addToCart.jsx
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { increaseQ, decreaseQ, addTotalPriceAndQuantity } from '../configure/redux/reducers/cartSlice';
+import { increaseQ, decreaseQ, addTotalPriceAndQuaintity } from '../configure/redux/reducers/cartSlice';
 import { useNavigate } from 'react-router-dom';
 
 const AddToCart = () => {
@@ -14,17 +14,17 @@ const AddToCart = () => {
   const fixedTotal = total.toFixed(2);
 
   useEffect(() => {
-    dispatch(addTotalPriceAndQuantity());
+    dispatch(addTotalPriceAndQuaintity());
   }, [dispatch, cartItems]);
 
   const increaseQuantity = (cart) => {
     dispatch(increaseQ(cart.id));
-    dispatch(addTotalPriceAndQuantity());
+    dispatch(addTotalPriceAndQuaintity());
   };
 
   const decreaseQuantity = (cart) => {
     dispatch(decreaseQ(cart.id));
-    dispatch(addTotalPriceAndQuantity());
+    dispatch(addTotalPriceAndQuaintity());
   };
 
   return (

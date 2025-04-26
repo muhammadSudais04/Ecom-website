@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts } from '../configure/redux/reducers/fetchslice';
+import { fetchProducts } from '../configure/redux/reducers/fetchSlice';
 import { addToCart } from '../configure/redux/reducers/cartSlice';
 import { Link } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ const Products = () => {
     dispatch(addToCart(product));
     // Using window.Swal from CDN
     window.Swal.fire({
-      title: 'Item successfully added to the cart 🛒',
+      title: 'Product added sucessfully 🛒',
       icon: 'success',
       confirmButtonColor: '#3085d6',
       confirmButtonText: 'OK',

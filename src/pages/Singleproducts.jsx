@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchProducts } from '../configure/redux/reducers/fetchslice';
+import { fetchProducts } from '../configure/redux/reducers/fetchSlice';
 import { addToCart } from '../configure/redux/reducers/cartSlice';
 
 const SingleProduct = () => {
